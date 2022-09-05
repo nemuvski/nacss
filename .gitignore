@@ -1,5 +1,8 @@
 node_modules/
 
+# Build
+docs/dist
+
 # Editor/IDE
 .idea/
 .vscode/

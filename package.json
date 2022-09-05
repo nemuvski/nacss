@@ -31,6 +31,7 @@
     "lint": "stylelint './src/**/*.css'",
     "lint:fix": "stylelint --fix './src/**/*.css'",
     "preview": "reload --dir=docs --start-page=preview/index.html --port=8080 --browser",
+    "docs:gen": "cp -r dist docs",
     "docs:preview": "reload --dir=docs --port=8181 --browser"
   },
   "devDependencies": {
