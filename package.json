@@ -1,0 +1,46 @@
+{
+  "name": "nacss",
+  "version": "1.0.0-beta",
+  "description": "CSS to prepare a base for styling",
+  "license": "MIT",
+  "author": "K.Utsunomiya",
+  "main": "dist/nacss.min.css",
+  "files": [
+    "/dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nemuvski/nacss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nemuvski/nacss/issues"
+  },
+  "keywords": [
+    "css",
+    "normalize",
+    "reset"
+  ],
+  "scripts": {
+    "prebuild": "npm run format && npm run lint",
+    "build": "npm run prebuild && node src/build.mjs",
+    "format": "prettier --check './**/*.{js,mjs,css,html}'",
+    "format:fix": "prettier --write './**/*.{js,mjs,css,html}'",
+    "lint": "stylelint './src/**/*.css'",
+    "lint:fix": "stylelint --fix './src/**/*.css'",
+    "preview": "reload --dir=docs --start-page=preview/index.html --port=8080 --browser",
+    "docs:preview": "reload --dir=docs --port=8181 --browser"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.1",
+    "prettier": "^2.7.1",
+    "reload": "^3.2.0",
+    "stylelint": "^14.11.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^28.0.0",
+    "stylelint-prettier": "^2.0.0"
+  }
+}

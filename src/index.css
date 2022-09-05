@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  text-rendering: auto;
+  line-height: 1.15;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ol,
+ul,
+pre,
+hr,
+input,
+button,
+optgroup,
+textarea,
+select {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+}
+
+abbr[title] {
+  /* safari */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+/*
+ * @see {https://stackoverflow.com/questions/38781089/font-family-monospace-monospace}
+ * @see {https://github.com/necolas/normalize.css/issues/519#issuecomment-197131966}
+ */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+input,
+button,
+optgroup,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  /* On Safari(iOS), '[type="submit"]' font is thick, so specify inherited font weight. */
+  font-weight: inherit;
+}
+
+/*
+ * Prevent scroll chaining
+ * ※ [multiple] selector is for <select>
+ *
+ * @see {https://defensivecss.dev/tip/scroll-chain/}
+ */
+code,
+textarea,
+[multiple] {
+  overscroll-behavior: contain;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+[disabled] {
+  cursor: not-allowed;
+}
+
+[type="search"] {
+  appearance: textfield;
+}
+
+/*
+ * Hidden search clear button
+ * @see {https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-search-cancel-button}
+ */
+::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+/*
+ * Font size is different on Safari(iOS)
+ */
+::-webkit-file-upload-button {
+  font-size: inherit;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+img,
+picture {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+table {
+  border-collapse: collapse;
+}

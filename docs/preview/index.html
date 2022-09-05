@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Preview of nacss</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/dist/nacss.min.css" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <header class="l-header">
+      <h1>😶 Preview of nacss</h1>
+    </header>
+
+    <main class="l-main">
+      <div class="c-section">
+        <h1>heading 1</h1>
+        <h2>heading 2</h2>
+        <h3>heading 3</h3>
+        <h4>heading 4</h4>
+        <h5>heading 5</h5>
+        <h6>heading 6</h6>
+      </div>
+
+      <hr />
+
+      <div class="c-section">
+        <p>paragraph</p>
+        <p><span>span</span></p>
+        <p><a href="/">link</a></p>
+        <p><b>b</b> <strong>strong</strong></p>
+        <p><i>i</i> <em>em</em></p>
+        <p><small>small</small></p>
+        <p><dfn>dfn</dfn></p>
+        <p><abbr title="abbr">abbr</abbr></p>
+        <p><mark>mark</mark></p>
+        <p><sub>sub</sub><sup>sup</sup></p>
+        <p><kbd>kbd</kbd></p>
+        <p><samp>samp</samp></p>
+        <p><output>output</output></p>
+        <p><code>code</code></p>
+      </div>
+
+      <div class="c-section">
+        <p>
+          img:
+          <img src="/assets/sample.jpg" alt="sample" />
+        </p>
+      </div>
+
+      <div class="c-section">
+        <p>
+          picture:
+          <picture>
+            <source srcset="/assets/sample.webp" type="image/webp" />
+            <img src="/assets/sample.jpg" alt="sample" />
+          </picture>
+        </p>
+      </div>
+
+      <div class="c-section">
+        <p>figure:</p>
+        <figure>
+          <img src="/assets/sample.jpg" alt="sample" />
+          <figcaption>figure-figcaption</figcaption>
+        </figure>
+      </div>
+
+      <div class="c-section">
+        <pre>pre</pre>
+        <pre><code>pre - code</code></pre>
+      </div>
+
+      <div class="c-section">
+        <address>address</address>
+      </div>
+
+      <div class="c-section">
+        <ol>
+          <li>ol</li>
+          <li>ol</li>
+        </ol>
+        <ul>
+          <li>ul</li>
+          <li>ul</li>
+        </ul>
+      </div>
+
+      <div class="c-section">
+        <dl>
+          <dt>dt</dt>
+          <dd>dd</dd>
+        </dl>
+      </div>
+
+      <div class="c-section">
+        <table>
+          <thead>
+            <tr>
+              <th>thead - th</th>
+              <td>thead - td</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>tbody - th</th>
+              <td>tbody - td</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>tfoot - th</th>
+              <td>tfoot - td</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="c-section">
+        <span>meter:</span>
+        <meter min="0" max="100" low="30" high="70" optimum="80" value="20">at 20/100</meter>
+        <meter min="0" max="100" low="30" high="70" optimum="80" value="50">at 50/100</meter>
+        <meter min="0" max="100" low="30" high="70" optimum="80" value="80">at 80/100</meter>
+      </div>
+
+      <div class="c-section">
+        <span>progress:</span>
+        <progress></progress>
+      </div>
+
+      <div class="c-section">
+        <details>
+          <summary>summary</summary>
+          <p>details-p</p>
+        </details>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            textarea:
+            <textarea placeholder="placeholder"></textarea>
+          </label>
+        </div>
+        <div>
+          <label>
+            textarea-disabled:
+            <textarea placeholder="placeholder" disabled></textarea>
+          </label>
+        </div>
+        <div>
+          <label>
+            textarea-readonly:
+            <textarea placeholder="placeholder" readonly>sample sample sample</textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            select:
+            <select>
+              <option selected>option A</option>
+              <option>option B</option>
+              <option>option C</option>
+              <option>option D</option>
+              <option>option E</option>
+              <optgroup label="Number">
+                <option>option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+              </optgroup>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label>
+            select-disabled:
+            <select disabled>
+              <option selected>option A</option>
+              <option>option B</option>
+              <option>option C</option>
+              <option>option D</option>
+              <option>option E</option>
+              <optgroup label="Number">
+                <option>option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+              </optgroup>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label>
+            select-multiple:
+            <select multiple>
+              <option selected>option A</option>
+              <option>option B</option>
+              <option selected>option C</option>
+              <option>option D</option>
+              <option>option E</option>
+              <optgroup label="Number">
+                <option>option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+              </optgroup>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label>
+            select-multiple-disabled:
+            <select multiple disabled>
+              <option selected>option A</option>
+              <option>option B</option>
+              <option selected>option C</option>
+              <option>option D</option>
+              <option>option E</option>
+              <optgroup label="Number">
+                <option>option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+              </optgroup>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <button type="button">button-button</button>
+          <button type="button" disabled>button-button:disabled</button>
+        </div>
+        <div>
+          <button type="reset">button-reset</button>
+          <button type="reset" disabled>button-reset:disabled</button>
+        </div>
+        <div>
+          <button type="submit">button-submit</button>
+          <button type="submit" disabled>button-submit:disabled</button>
+        </div>
+        <div>
+          <input type="button" value="input-button" />
+          <input type="button" disabled value="input-button:disabled" />
+        </div>
+        <div>
+          <input type="reset" value="input-reset" />
+          <input type="reset" disabled value="input-reset:disabled" />
+        </div>
+        <div>
+          <input type="submit" value="input-submit" />
+          <input type="submit" disabled value="input-submit:disabled" />
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            input-text:
+            <input type="text" placeholder="placeholder" />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-text-disabled:
+            <input type="text" placeholder="placeholder" disabled />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-text-readonly:
+            <input type="text" placeholder="placeholder" readonly />
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            input-search:
+            <input type="search" placeholder="placeholder" />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-search-disabled:
+            <input type="search" placeholder="placeholder" disabled />
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            input-url:
+            <input type="url" placeholder="placeholder" />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-url-disabled:
+            <input type="url" placeholder="placeholder" disabled />
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            input-email:
+            <input type="email" placeholder="placeholder" />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-email-disabled:
+            <input type="email" placeholder="placeholder" disabled />
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            input-tel:
+            <input type="tel" placeholder="placeholder" />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-tel-disabled:
+            <input type="tel" placeholder="placeholder" disabled />
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            input-password:
+            <input type="password" placeholder="placeholder" />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-password-disabled:
+            <input type="password" placeholder="placeholder" disabled />
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            input-date:
+            <input type="date" value="2021-10-10" />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-date-disabled:
+            <input type="date" value="2021-10-10" disabled />
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            input-datetime-local:
+            <input type="datetime-local" value="2021-10-10T20:30:10" />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-datetime-local-disabled:
+            <input type="datetime-local" value="2021-10-10T20:30:10" disabled />
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            input-month:
+            <input type="month" value="2021-10" />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-month-disabled:
+            <input type="month" value="2021-10" disabled />
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            input-time:
+            <input type="time" value="20:30:10" />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-time-disabled:
+            <input type="time" value="20:30:10" disabled />
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            input-number:
+            <input type="number" value="20" />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-number-disabled:
+            <input type="number" value="20" disabled />
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            input-file:
+            <input type="file" />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-file-disabled:
+            <input type="file" disabled />
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            input-color:
+            <input type="color" value="#aa88ff" />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-color-disabled:
+            <input type="color" value="#aa88ff" disabled />
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div>
+          <label>
+            input-range:
+            <input type="range" />
+          </label>
+        </div>
+        <div>
+          <label>
+            input-range-disabled:
+            <input type="range" disabled />
+          </label>
+        </div>
+      </div>
+
+      <div class="c-section">
+        <form>
+          <fieldset>
+            <legend>fieldset-legend (radio)</legend>
+            <label>
+              <input type="radio" name="input-radio-group" value="input-radio" />
+              input-radio
+            </label>
+            <label>
+              <input type="radio" name="input-radio-group" value="input-radio-checked" checked />
+              input-radio-checked
+            </label>
+            <label>
+              <input type="radio" name="input-radio-group" value="input-radio-disabled" disabled />
+              input-radio-disabled
+            </label>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="c-section">
+        <form>
+          <fieldset>
+            <legend>fieldset-legend (checkbox)</legend>
+            <label>
+              <input type="checkbox" name="input-checkbox-group" value="input-checkbox" />
+              input-checkbox
+            </label>
+            <label>
+              <input type="checkbox" name="input-checkbox-group" value="input-checkbox-checked" checked />
+              input-checkbox-checked
+            </label>
+            <label>
+              <input type="checkbox" name="input-checkbox-group" value="input-checkbox-disabled" disabled />
+              input-checkbox-disabled
+            </label>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <p><small>&copy; nacss</small></p>
+    </footer>
+  </body>
+</html>
