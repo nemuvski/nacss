@@ -11,7 +11,7 @@ if (!fs.existsSync(OUTPUT_DIR_PATH)) {
   fs.mkdirSync(OUTPUT_DIR_PATH, { recursive: true });
 }
 
-const statements = `/*! nacss v${pkg.version} ${pkg.license} ${pkg.homepage} */\n`;
+const statements = `/*! nacss v${pkg.version} ${pkg.license} */\n`;
 const inputCss = statements + fs.readFileSync(LOAD_CSS_PATH, "utf8");
 
 const outputCss = new CleanCSS({
