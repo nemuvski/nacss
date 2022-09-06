@@ -4,6 +4,10 @@
 ::before {
   box-sizing: border-box
 }
+html {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none
+}
 body {
   line-height: 1.15
 }

@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+/*
+ * @see {https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/}
+ */
+html {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
 body {
   line-height: 1.15;
 }
