@@ -11,34 +11,51 @@ Inspired by [normalize.css](https://www.npmjs.com/package/normalize.css). It pro
 
 ## Preview
 
-You can see the preview of **nacss** *[here](https://nacss.netlify.app/preview/)*.
+You can see the preview of **nacss** styles *[here](https://nacss.netlify.app/preview/)*.
 
 
-## How to use
-
-### CDN
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nacss/dist/nacss.min.css" />
-
-<!-- Version specification. e.g. 1.0.0  -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/nacss@{version}/dist/nacss.min.css"
-/>
-```
-
-### npm
-
-First, install the package.
+## Installation
 
 ```bash
 npm install nacss
 yarn add nacss
 ```
 
-Then write the `import` declaration in your *js* or *ts* file.
+There's no need to install package if loading CSS file via CDN.
+
+
+## How to use
+
+Just load CSS file in your project.
+
+There are several ways to load CSS. The following shows how to load.
+Then of course, the choice is yours. 🐑
+
+### HTML
+
+Insert `<link>` into `<head>`.
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/nacss@1.0.0/dist/nacss.min.css"
+/>
+```
+
+See *[here](https://github.com/nemuvski/nacss/releases)* for valid version.
+
+### JavaScript
 
 ```js
-import 'nacss'
+import 'nacss';
+```
+
+### Stylesheet
+
+```css
+@import 'nacss';
+@import url(nacss);
+
+/* via CDN */
+@import url(https://cdn.jsdelivr.net/npm/nacss@1.0.0/dist/nacss.min.css);
 ```
