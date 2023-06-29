@@ -1,6 +1,6 @@
 *,
-*::before,
-*::after {
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -16,59 +16,53 @@ body {
   line-height: 1.15;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-figure,
-blockquote,
-dl,
-dd,
-ol,
-ul,
-pre,
-hr,
-input,
-button,
-optgroup,
-textarea,
-select {
+:where(
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    figure,
+    blockquote,
+    dl,
+    dd,
+    ol,
+    ul,
+    pre,
+    hr,
+    input,
+    button,
+    optgroup,
+    textarea,
+    select
+  ) {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+:where(h1, h2, h3, h4, h5, h6, p) {
   overflow-wrap: break-word;
 }
 
-a {
+:where(a) {
   color: inherit;
 }
 
-b,
-strong {
+:where(b, strong) {
   font-weight: 700;
 }
 
-small {
+:where(small) {
   font-size: 80%;
 }
 
-sub,
-sup {
+:where(sub, sup) {
   font-size: 75%;
 }
 
-abbr[title] {
+:where(abbr[title]) {
   /* safari */
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
@@ -78,19 +72,12 @@ abbr[title] {
  * @see {https://stackoverflow.com/questions/38781089/font-family-monospace-monospace}
  * @see {https://github.com/necolas/normalize.css/issues/519#issuecomment-197131966}
  */
-pre,
-code,
-kbd,
-samp {
+:where(pre, code, kbd, samp) {
   font-family: monospace, monospace;
   font-size: 1em;
 }
 
-input,
-button,
-optgroup,
-textarea,
-select {
+:where(input, button, optgroup, textarea, select) {
   font-family: inherit;
   font-size: inherit;
   /* On Safari(iOS), '[type="submit"]' font is thick, so specify inherited font weight. */
@@ -103,30 +90,24 @@ select {
  *
  * @see {https://defensivecss.dev/tip/scroll-chain/}
  */
-code,
-textarea,
-[multiple] {
+:where(code, textarea, [multiple]) {
   overscroll-behavior: contain;
 }
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+:where(button, [type="button"], [type="reset"], [type="submit"]) {
   -webkit-appearance: button;
   cursor: pointer;
 }
 
-[disabled] {
+:where([disabled]) {
   cursor: not-allowed;
 }
 
-[inert],
-[readonly] {
+:where([inert], [readonly]) {
   pointer-events: none;
 }
 
-[type="search"] {
+:where([type="search"]) {
   appearance: textfield;
 }
 
@@ -134,45 +115,40 @@ button,
  * Hidden search clear button
  * @see {https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-search-cancel-button}
  */
-::-webkit-search-cancel-button {
+:where(::-webkit-search-cancel-button) {
   appearance: none;
 }
 
 /*
  * Font size is different on Safari(iOS)
  */
-::-webkit-file-upload-button {
+:where(::-webkit-file-upload-button) {
   font-size: inherit;
 }
 
-textarea {
+:where(textarea) {
   overflow: auto;
   resize: vertical;
 }
 
-img,
-picture,
-svg {
+:where(img, picture, svg) {
   display: inline-block;
   vertical-align: middle;
 }
 
-video {
+:where(video) {
   display: block;
 }
 
-img,
-picture,
-svg,
-video {
+:where(img, picture, svg, video) {
   block-size: auto;
   max-inline-size: 100%;
 }
 
-svg:not([fill]) {
+:where(svg:not([fill])) {
   fill: currentColor;
 }
 
-table {
+:where(table) {
   border-collapse: collapse;
 }
