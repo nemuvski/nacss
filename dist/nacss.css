@@ -101,11 +101,20 @@ textarea {
   resize: vertical
 }
 img,
-picture {
+picture,
+svg {
   display: inline-block;
-  max-width: 100%;
-  height: auto;
   vertical-align: middle
+}
+video {
+  display: block
+}
+img,
+picture,
+svg,
+video {
+  block-size: auto;
+  max-inline-size: 100%
 }
 svg:not([fill]) {
   fill: currentColor
