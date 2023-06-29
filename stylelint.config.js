@@ -4,6 +4,5 @@ module.exports = {
   defaultSeverity: "warning",
   rules: {
     "prettier/prettier": true,
-    "string-quotes": "double",
   },
 };
