@@ -42,7 +42,7 @@ Insert `<link>` into `<head>`.
 <!-- Change version specification  -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/nacss@1.1.0/dist/nacss.min.css"
+  href="https://cdn.jsdelivr.net/npm/nacss@2.0.0/dist/nacss.min.css"
 />
 ```
 
@@ -61,5 +61,5 @@ import 'nacss';
 @import url(nacss);
 
 /* via CDN (Change version specification) */
-@import url(https://cdn.jsdelivr.net/npm/nacss@1.1.0/dist/nacss.min.css);
+@import url(https://cdn.jsdelivr.net/npm/nacss@2.0.0/dist/nacss.min.css);
 ```

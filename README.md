@@ -45,7 +45,7 @@ Insert `<link>` into `<head>`.
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/nacss@1.1.0/dist/nacss.min.css"
+  href="https://cdn.jsdelivr.net/npm/nacss@2.0.0/dist/nacss.min.css"
 />
 ```
 
@@ -64,5 +64,5 @@ import 'nacss';
 @import url(nacss);
 
 /* via CDN */
-@import url(https://cdn.jsdelivr.net/npm/nacss@1.1.0/dist/nacss.min.css);
+@import url(https://cdn.jsdelivr.net/npm/nacss@2.0.0/dist/nacss.min.css);
 ```
