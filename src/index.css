@@ -111,6 +111,11 @@ button,
   cursor: not-allowed;
 }
 
+[inert],
+[readonly] {
+  pointer-events: none;
+}
+
 [type="search"] {
   appearance: textfield;
 }
