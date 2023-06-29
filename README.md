@@ -14,6 +14,13 @@ Inspired by [normalize.css](https://www.npmjs.com/package/normalize.css). It pro
 You can see the preview of **nacss** styles *[here](https://nacss.netlify.app/preview/)*.
 
 
+## Support browsers
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+
+
 ## Installation
 
 ```bash
