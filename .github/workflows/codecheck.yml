@@ -1,0 +1,26 @@
+name: CodeCheck
+
+on:
+  push:
+    tags-ignore:
+      - '*'
+    paths-ignore:
+      - '**/*.md'
+
+jobs:
+  code-check:
+    name: CodeCheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+      - run: npm ci
+      - name: prettier
+        run: npm run format
+      - name: stylelint
+        run: npm run lint
+      - name: building
+        run: npm run build

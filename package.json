@@ -25,11 +25,10 @@
     "reset"
   ],
   "scripts": {
-    "prebuild": "npm run format && npm run lint",
     "build": "node src/build.mjs",
     "format": "prettier --check './**/*.{js,mjs,css,html}'",
     "format:fix": "prettier --write './**/*.{js,mjs,css,html}'",
-    "lint": "stylelint './src/**/*.css'",
+    "lint": "stylelint --max-warnings=0 './src/**/*.css'",
     "lint:fix": "stylelint --fix './src/**/*.css'",
     "preview": "reload --dir=docs --start-page=preview/index.html --port=8080 --browser",
     "docs:gen": "cp -r dist docs",
