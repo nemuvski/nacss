@@ -36,7 +36,8 @@
     "docs:preview": "reload --dir=docs --port=8181 --browser"
   },
   "devDependencies": {
-    "clean-css": "^5.3.2",
+    "@types/csso": "^5.0.0",
+    "csso": "^5.0.5",
     "prettier": "^3.0.0",
     "reload": "^3.2.1",
     "stylelint": "^15.10.2",
