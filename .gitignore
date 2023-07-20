@@ -1,7 +1,7 @@
 node_modules/
 
 # Build
-docs/dist
+dist/
 
 # Editor/IDE
 .idea/
