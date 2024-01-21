@@ -35,13 +35,13 @@
     "docs:preview": "reload --dir=docs --port=8181 --browser"
   },
   "devDependencies": {
-    "@types/csso": "^5.0.0",
+    "@types/csso": "^5.0.4",
     "csso": "^5.0.5",
-    "prettier": "^3.0.0",
+    "prettier": "^3.2.4",
     "reload": "^3.2.1",
-    "stylelint": "^15.10.2",
-    "stylelint-config-recess-order": "^4.3.0",
-    "stylelint-config-standard": "^34.0.0",
-    "stylelint-prettier": "^4.0.0"
+    "stylelint": "^16.2.0",
+    "stylelint-config-recess-order": "^4.4.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-prettier": "^5.0.0"
   }
 }
