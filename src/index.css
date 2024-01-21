@@ -141,8 +141,8 @@ body {
 }
 
 :where(img, picture, svg, video) {
-  block-size: auto;
   max-inline-size: 100%;
+  block-size: auto;
 }
 
 :where(svg:not([fill])) {
