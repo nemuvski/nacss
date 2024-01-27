@@ -135,8 +135,13 @@
       </div>
 
       <div class="c-section">
-        <span>progress:</span>
-        <progress></progress>
+        <span>progress(indeterminate):</span>
+        <progress class="js-indeterminate"></progress>
+      </div>
+
+      <div class="c-section">
+        <span>progress(determinate):</span>
+        <progress value="70" max="100">70%</progress>
       </div>
 
       <div class="c-section">
@@ -510,6 +515,18 @@
       <div class="c-section">
         <form>
           <fieldset>
+            <legend>fieldset-legend (radio-indeterminate)</legend>
+            <label>
+              <input type="radio" name="input-radio-group" value="input-radio-indeterminate" class="js-indeterminate" />
+              input-radio-indeterminate
+            </label>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="c-section">
+        <form>
+          <fieldset>
             <legend>fieldset-legend (checkbox)</legend>
             <label>
               <input type="checkbox" name="input-checkbox-group" value="input-checkbox" />
@@ -522,6 +539,15 @@
             <label>
               <input type="checkbox" name="input-checkbox-group" value="input-checkbox-disabled" disabled />
               input-checkbox-disabled
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="input-checkbox-group"
+                value="input-checkbox-indeterminate"
+                class="js-indeterminate"
+              />
+              input-checkbox-indeterminate
             </label>
           </fieldset>
         </form>
