@@ -6,4 +6,9 @@ window.addEventListener("load", () => {
   document.getElementById("js-dialog-close").addEventListener("click", () => {
     dialog.close();
   });
+
+  // Set `indeterminate`
+  document.querySelectorAll(".js-indeterminate").forEach((el) => {
+    el.indeterminate = true;
+  });
 });
