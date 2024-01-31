@@ -19,12 +19,12 @@ jobs:
       id-token: write
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version-file: '.node-version'
-          cache: 'npm'
-          registry-url: 'https://registry.npmjs.org'
+          node-version-file: ".node-version"
+          cache: "npm"
+          registry-url: "https://registry.npmjs.org"
       - run: npm ci
       - name: building
         run: npm run build
