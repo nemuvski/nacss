@@ -26,22 +26,18 @@
   ],
   "scripts": {
     "build": "node src/build.mjs",
-    "format": "prettier --check './**/*.{js,mjs,css,html}'",
-    "format:fix": "prettier --write './**/*.{js,mjs,css,html}'",
-    "lint": "stylelint --max-warnings=0 './src/**/*.css'",
-    "lint:fix": "stylelint --fix './src/**/*.css'",
+    "format": "biome format ./",
+    "format:fix": "biome format --write ./",
+    "lint": "biome lint ./",
+    "lint:fix": "biome lint --apply ./",
     "preview": "reload --dir=docs --start-page=preview/index.html --port=8080 --browser",
     "docs:gen": "cp -r dist docs",
     "docs:preview": "reload --dir=docs --port=8181 --browser"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.5.3",
     "@types/csso": "^5.0.4",
     "csso": "^5.0.5",
-    "prettier": "^3.2.4",
-    "reload": "^3.2.1",
-    "stylelint": "^16.2.0",
-    "stylelint-config-recess-order": "^4.4.0",
-    "stylelint-config-standard": "^36.0.0",
-    "stylelint-prettier": "^5.0.0"
+    "reload": "^3.2.1"
   }
 }
