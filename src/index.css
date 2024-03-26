@@ -115,14 +115,14 @@ body {
  * Hidden search clear button
  * @see {https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-search-cancel-button}
  */
-:where(::-webkit-search-cancel-button) {
+::-webkit-search-cancel-button {
   appearance: none;
 }
 
 /*
  * Font size is different on Safari(iOS)
  */
-:where(::-webkit-file-upload-button) {
+::-webkit-file-upload-button {
   font-size: inherit;
 }
 
