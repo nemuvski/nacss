@@ -10,21 +10,23 @@
       "recommended": true,
       "correctness": {
         "useExhaustiveDependencies": "warn",
-        "noUnusedVariables": "warn"
+        "noUnusedVariables": "warn",
+        "noUnusedImports": "warn"
       },
       "complexity": {
         "noForEach": "off"
       },
       "style": {
-        "noDefaultExport": "off"
-      },
-      "nursery": {
-        "useExportType": "error",
         "useImportType": "error",
-        "noUnusedImports": "warn",
-        "noGlobalEval": "error",
-        "noGlobalAssign": "error",
+        "useExportType": "error",
+        "noDefaultExport": "off",
         "useNodejsImportProtocol": "warn"
+      },
+      "suspicious": {
+        "noGlobalAssign": "error"
+      },
+      "security": {
+        "noGlobalEval": "error"
       }
     }
   },

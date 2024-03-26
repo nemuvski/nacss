@@ -5,9 +5,7 @@
   "license": "MIT",
   "author": "K.Utsunomiya",
   "main": "dist/nacss.min.css",
-  "files": [
-    "/dist"
-  ],
+  "files": ["/dist"],
   "homepage": "https://nacss.netlify.app/",
   "publishConfig": {
     "access": "public"
@@ -19,11 +17,7 @@
   "bugs": {
     "url": "https://github.com/nemuvski/nacss/issues"
   },
-  "keywords": [
-    "css",
-    "normalize",
-    "reset"
-  ],
+  "keywords": ["css", "normalize", "reset"],
   "scripts": {
     "build": "node src/build.mjs",
     "format": "biome format ./",
@@ -35,7 +29,7 @@
     "docs:preview": "reload --dir=docs --port=8181 --browser"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.5.3",
+    "@biomejs/biome": "1.6.3",
     "@types/csso": "^5.0.4",
     "csso": "^5.0.5",
     "reload": "^3.2.1"
