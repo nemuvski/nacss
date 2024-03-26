@@ -5,7 +5,7 @@
   },
   "linter": {
     "enabled": true,
-    "ignore": ["dist/"],
+    "ignore": ["dist/", "package.json"],
     "rules": {
       "recommended": true,
       "correctness": {
@@ -32,7 +32,7 @@
   },
   "formatter": {
     "enabled": true,
-    "ignore": ["dist/"],
+    "ignore": ["dist/", "package.json"],
     "lineEnding": "lf",
     "lineWidth": 120,
     "indentStyle": "space",
