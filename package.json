@@ -19,6 +19,7 @@
   },
   "keywords": ["css", "normalize", "reset"],
   "scripts": {
+    "dev": "NODE_ENV=development node src/build.mjs",
     "build": "node src/build.mjs",
     "format": "biome format ./",
     "format:fix": "biome format --write ./",
@@ -31,7 +32,8 @@
   "devDependencies": {
     "@biomejs/biome": "1.6.3",
     "@types/csso": "^5.0.4",
-    "csso": "^5.0.5",
+    "browserslist": "^4.23.0",
+    "lightningcss": "^1.24.1",
     "reload": "^3.2.1"
   }
 }
