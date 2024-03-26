@@ -19,6 +19,7 @@
   },
   "keywords": ["css", "normalize", "reset"],
   "scripts": {
+    "dev": "NODE_ENV=development node src/build.mjs",
     "build": "node src/build.mjs",
     "format": "biome format ./",
     "format:fix": "biome format --write ./",
