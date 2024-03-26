@@ -32,7 +32,8 @@
   "devDependencies": {
     "@biomejs/biome": "1.6.3",
     "@types/csso": "^5.0.4",
-    "csso": "^5.0.5",
+    "browserslist": "^4.23.0",
+    "lightningcss": "^1.24.1",
     "reload": "^3.2.1"
   }
 }

@@ -1,11 +1,20 @@
 import fs from "node:fs";
 import path from "node:path";
-import * as csso from "csso";
+import browserslist from "browserslist";
+import { browserslistToTargets, transform } from "lightningcss";
 
-const OUTPUT_DIR_PATH = path.resolve("dist");
+const isDevMode = process.env.NODE_ENV === "development";
+if (isDevMode) {
+  console.info("development mode");
+}
+
+const OUTPUT_DIR_PATH = isDevMode ? path.resolve("dev") : path.resolve("dist");
+const OUTPUT_FILE_NAME = isDevMode ? "nacss.css" : "nacss.min.css";
 const LOAD_CSS_PATH = path.resolve("src", "index.css");
 
 const pkg = JSON.parse(fs.readFileSync("./package.json", "utf8"));
+
+console.info("build version:", pkg.version);
 
 if (!fs.existsSync(OUTPUT_DIR_PATH)) {
   fs.mkdirSync(OUTPUT_DIR_PATH, { recursive: true });
@@ -14,20 +23,22 @@ if (!fs.existsSync(OUTPUT_DIR_PATH)) {
 const statements = `/*! nacss v${pkg.version} ${pkg.license} */\n`;
 const inputCss = statements + fs.readFileSync(LOAD_CSS_PATH, "utf8");
 
-/**
- * @type {import('csso').MinifyOptions & import('csso').CompressOptions}
- */
-const minifyOptions = {
-  restructure: false,
+const targetBroswerList = browserslist("> 0.2% and not dead");
+
+console.info("targets:");
+console.info(targetBroswerList.join("\n"));
+
+const result = transform({
+  code: Buffer.from(inputCss),
+  targets: browserslistToTargets(targetBroswerList),
+  minify: !isDevMode,
   sourceMap: false,
-  debug: false,
-  // TO keep the license comment
-  comments: "first-exclamation",
-};
+  errorRecovery: true,
+});
 
-const result = csso.minify(inputCss, minifyOptions);
+if (result.warnings.length > 0) {
+  console.warn(warnings);
+  process.exit(1);
+}
 
-fs.writeFileSync(path.join(OUTPUT_DIR_PATH, "nacss.min.css"), result.css, { encoding: "utf8" });
-
-console.info("build version:", pkg.version);
-console.info("output dir:", OUTPUT_DIR_PATH);
+fs.writeFileSync(path.join(OUTPUT_DIR_PATH, OUTPUT_FILE_NAME), result.code, { encoding: "utf8" });
