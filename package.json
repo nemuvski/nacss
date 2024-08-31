@@ -39,7 +39,7 @@
     "@biomejs/biome": "1.8.3",
     "@types/csso": "^5.0.4",
     "browserslist": "^4.23.0",
-    "lightningcss": "^1.24.1",
+    "lightningcss": "^1.26.0",
     "reload": "^3.3.0"
   }
 }
