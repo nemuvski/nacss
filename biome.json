@@ -40,7 +40,7 @@
   },
   "javascript": {
     "formatter": {
-      "trailingComma": "es5",
+      "trailingCommas": "es5",
       "quoteStyle": "double",
       "semicolons": "always",
       "jsxQuoteStyle": "double",
@@ -57,5 +57,16 @@
         }
       }
     }
-  ]
+  ],
+  "css": {
+    "parser": {
+      "cssModules": false
+    },
+    "linter": {
+      "enabled": true
+    },
+    "formatter": {
+      "enabled": true
+    }
+  }
 }
