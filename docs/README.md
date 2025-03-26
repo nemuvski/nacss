@@ -39,10 +39,10 @@ Then of course, the choice is yours. 🐑
 Insert `<link>` into `<head>`.
 
 ```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/nacss/dist/nacss.min.css"
-/>
+<!-- jsDelivr -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nacss" />
+<!-- unpkg -->
+<link rel="stylesheet" href="https://unpkg.com/nacss" />
 ```
 
 See *[here](https://github.com/nemuvski/nacss/releases)* for valid version.
@@ -60,5 +60,6 @@ import 'nacss';
 @import url(nacss);
 
 /* via CDN */
-@import url(https://cdn.jsdelivr.net/npm/nacss/dist/nacss.min.css);
+@import url(https://cdn.jsdelivr.net/npm/nacss);
+@import url(https://unpkg.com/nacss);
 ```
