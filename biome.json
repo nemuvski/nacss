@@ -3,7 +3,7 @@
   "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "linter": {
     "enabled": true,
-    "includes": ["**", "!**/dist/", "!**/package.json", "!**/dev/"],
+    "includes": ["**", "!dist", "!**/package.json", "!dev"],
     "rules": {
       "recommended": true,
       "correctness": {
@@ -40,7 +40,7 @@
   },
   "formatter": {
     "enabled": true,
-    "includes": ["**", "!**/dist/", "!**/package.json", "!**/dev/"],
+    "includes": ["**", "!dist", "!**/package.json", "!dev"],
     "lineEnding": "lf",
     "lineWidth": 120,
     "indentStyle": "space",

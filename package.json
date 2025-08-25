@@ -36,7 +36,7 @@
     "docs:preview": "reload --dir=docs --port=8181 --browser"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.0.6",
+    "@biomejs/biome": "2.2.2",
     "@types/csso": "^5.0.4",
     "browserslist": "^4.25.3",
     "lightningcss": "^1.30.1",
