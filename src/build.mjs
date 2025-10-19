@@ -1,3 +1,5 @@
+// @ts-check
+
 import fs from "node:fs";
 import path from "node:path";
 import browserslist from "browserslist";
@@ -5,7 +7,9 @@ import { browserslistToTargets, transform } from "lightningcss";
 
 const isDevMode = process.env.NODE_ENV === "development";
 if (isDevMode) {
-  console.info("development mode");
+  console.info("---- DEVELOPMENT BUILD MODE ----");
+} else {
+  console.info("---- PRODUCTION BUILD MODE ----");
 }
 
 const OUTPUT_DIR_PATH = isDevMode ? path.resolve("dev") : path.resolve("dist");
@@ -29,6 +33,7 @@ console.info("targets:");
 console.info(targetBroswerList.join("\n"));
 
 const result = transform({
+  filename: "index.css", // Used for error messages and source maps
   code: Buffer.from(inputCss),
   targets: browserslistToTargets(targetBroswerList),
   minify: !isDevMode,
@@ -37,7 +42,7 @@ const result = transform({
 });
 
 if (result.warnings.length > 0) {
-  console.warn(warnings);
+  console.warn(result.warnings);
   process.exit(1);
 }
 
