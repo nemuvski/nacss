@@ -27,6 +27,7 @@
   "scripts": {
     "dev": "NODE_ENV=development node src/build.mjs",
     "build": "node src/build.mjs",
+    "compare-published-css": "sh src/compare-published-css.sh",
     "format": "biome format ./",
     "format:fix": "biome format --write ./",
     "lint": "biome lint ./",
