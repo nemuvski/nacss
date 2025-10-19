@@ -11,12 +11,6 @@
 # Exit code:
 #   0 - No differences (local file matches published)
 #   1 - Differences detected
-#
-# Requirements:
-#   - curl
-#   - diff
-#   - node (or jq, if you prefer to parse package.json)
-
 
 set -euo pipefail
 
