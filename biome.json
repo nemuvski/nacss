@@ -3,7 +3,7 @@
   "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "linter": {
     "enabled": true,
-    "includes": ["**", "!dist", "!**/package.json", "!dev"],
+    "includes": ["**", "!dist", "!**/package.json", "!dev", "!**/*.html"],
     "rules": {
       "recommended": true,
       "correctness": {
